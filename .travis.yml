@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - stable
+before_script:
+  - phantomjs --version
+  - phantomjs --webdriver=4444 2>&1 >/dev/null &
+script:
+  - npm run test
+  - npm run test:ci
+cache:
+  directories:
+    - node_modules
+addons:
+  sauce_connect: true
+env:
+  global:
+    - secure: >-
+        P/KKehH+/Vc7Qtf2m7yx1wOMC1z2yLAsRq3zhv1pY6gbhMnWz5/ATW/ruRgVieMaGQFngQGpDlBVa9xgEZLQTmcLYUidF/b3O80ildVaO5JK4DuT5XOn+DAj1yMWGwri2k5bWFZ6ftgg8vfDq1nZyXgVInjdTyS9LsBHbkqHe9E+6KJU2X15Yn5RYTCareNW+iLcEUUNuhLIdM6lWorwTcndszNeUQUUrglCJHw49dDQvoEoCleym/GwGmW3kkNl7gVYNgXnF60m0CpoFV3CNUE18nCq8WGoHfBtFEdtjX8mwLLcr5CRpjyRfQXBe/V9/zPZP2G+RQfB7tJuuxNlItp5Iy5CasXgXQLGXSIkGoL2+q5lWkeeqFtIJLdruirEMfnSPItWDqV3R3iMVKKmY3vD0h2Ofq3jjF5rdmItYTW8w8Hc62ZSxavHMHqz2pm+u4BM3GJoK5VEuMgd5VnTc6ezUrNus0+U/ob9trR3Aw+7KpVG1+p88vQFLySdojqU6WPW57+HsSntE7QHWE3RlDcqLEo09c04nukMeLVUG9mJ/mPZKZuKVo0FBnB85ACSuTEcBVnaxw4XT3CQgbqgBhbKngJvolJfXmvCiqTGh4g1QCy/NZ6LTEo26HBeXLCyh9fY1ASoduWovQqaBUYM9YGD8diIF5hMPZJgJj1lKwo=
+    - secure: >-
+        fhMZ2/TdEW+w3zWBTfWL7iwEhDBbfi4G9AkXGiFZgtcUv5cYTUJg8S/q64o/p9Tux5Wop0H8haHkiIaln7Lrl2ezRAAKS9oHvmQVgnDQgbwPQ+dsOdF9FFDyJgQ1PHhsJcgmZ/hsEi07xxnzTd7LDUzFlxn8R/4WPaPmIFo2brjUwsVqM+y/E2MIUAKph07bl7zg4LXqk3f0h7mx/FHg1aj2NCqpMxj8DdyFyrvcbsiHgodeAWjKS46bn0fmw8/ZEsjWGhz65bpJRchgzhMqUtD9XaS6BRmPo/EF01zBaSbQ3t0R3vSD+YUhQpWOQ3XtQSWnDiK/f+hYQ7hqscds9VfoYZ/iRoqcm9IMX2WFNXUyHz/Gkd07uKfdulYYTjik6Qh1Iv2nJkASyPr6GKfs3+XDbB0NljftFOB2e4xRRvwmjdT0r5l9/r7KPoydbuc1ZbHwrLrQERk9PEXn+raC3GwkP3IzUfn6mb4AYVBRHmDGv8sJCOkNWvM0MPplYbb6yLJkjWsDYgB+0QIGNP4Ysj6aDBl0+yLZgXF4MUTUCCFyoSJlSoMeFGD+y5iuVMLSAXNmD+GIbkZtqLl0FIggSepCA/efjRB/GFhYrEBqKp1p76S5vMSvVHMR1BQv541E49c5pYV1aXwFZOD253rWqnVJ4d7MwEmYJbQUKiKjGeY=
