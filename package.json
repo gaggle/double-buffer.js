@@ -1,0 +1,33 @@
+{
+  "name": "double-buffer.js",
+  "version": "0.0.0",
+  "description": "Double Buffer.js",
+  "main": "lib/DoubleBuffer.js",
+  "scripts": {
+    "test": "karma start",
+    "test:ci": "karma start karma.ci.conf.js"
+  },
+  "author": "Jon Lauridsen",
+  "license": "MIT",
+  "dependencies": {
+    "js-animate": "github:gaggle/js-animate"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "browserify-istanbul": "^2.0.0",
+    "chai": "^3.5.0",
+    "es6-promise": "^3.1.2",
+    "istanbul": "^0.4.3",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.4",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.5.5",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^0.3.1",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.7",
+    "sinon": "^1.17.3"
+  }
+}
