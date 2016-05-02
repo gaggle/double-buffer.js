@@ -13,7 +13,7 @@ module.exports = function (config) {
       "./test/*.js": ["browserify"]
     },
 
-    reporters: ["dots", "coverage"],
+    reporters: ["dots", "coverage", "coveralls"],
 
     browserify: {
       debug: true, // generate source maps for easier debugging
