@@ -1,5 +1,3 @@
-// Karma configuration
-
 module.exports = function (config) {
   var customLaunchers = {
     sl_chrome: {
@@ -45,7 +43,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      "./test/*.js": ["browserify"],
+      "./test/*.js": ["browserify"]
     },
 
     reporters: ["dots", "saucelabs"],
