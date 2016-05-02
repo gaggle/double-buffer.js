@@ -10,6 +10,10 @@ At this point a new image can be faded in, leading to smooth fadein transitions.
 
 Useful for galleries or backgrounds displaying potentially infinite images.
 
+Here an inital image fades in, and another immediately fades in on top.
+![Example](example.gif)
+
+
 ### Install
 
     npm install gaggle/double-buffer.js
