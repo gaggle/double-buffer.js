@@ -1,6 +1,6 @@
 {
   "name": "double-buffer.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Double Buffer.js",
   "main": "lib/DoubleBuffer.js",
   "scripts": {
